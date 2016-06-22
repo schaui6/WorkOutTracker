@@ -4,7 +4,7 @@ Web app developed for personal trainers to track clients’ fitness goals.
 
 Technologies Used:
 
-* Ruby/Ruby on Rails 4
+* Ruby/Ruby on Rails
 * Javascript/jQuery/AJAX/D3.js
 * Paperclip
 * Bcrypt
@@ -13,9 +13,9 @@ Technologies Used:
 
 == Screenshots
 
-![alt tag](user-login.png)
-![alt tag](admin-page.png)
-![alt tag](admin-client-show-page.png)
-![alt tag](client-show-page.png)
+![alt tag](/user-login.png)
+![alt tag](/admin-page.png)
+![alt tag](/admin-client-show-page.png)
+![alt tag](/client-show-page.png)
 
 
