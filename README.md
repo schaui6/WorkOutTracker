@@ -12,10 +12,13 @@ Web app developed for personal trainers to track clients’ fitness goals.
 * RSpec/factory_girl/Capybara
 
 ## Screenshots
-
+###### User Login
 ![alt tag](/user-login.png)
+###### Admin Page
 ![alt tag](/admin-page.png)
+###### Admin Page - Client Show Page
 ![alt tag](/admin-client-show-page.png)
+###### Client Page - Show Page
 ![alt tag](/client-show-page.png)
 
 
