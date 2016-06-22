@@ -9,7 +9,7 @@ Web app developed for personal trainers to track clients’ fitness goals.
 * Paperclip
 * Bcrypt
 * HTML/CSS/Bootstrap
-* RSpec/Factory girl/Capybara
+* RSpec/factory_girl/Capybara
 
 ## Screenshots
 
