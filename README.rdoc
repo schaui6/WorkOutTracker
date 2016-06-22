@@ -9,8 +9,13 @@ Technologies Used:
 * Paperclip
 * Bcrypt
 * HTML/CSS/Bootstrap
-* RSCpec/Factory girl/Capybara
+* RSpec/Factory girl/Capybara
 
 == Screenshots
+
+![alt tag](user-login.png)
+![alt tag](admin-page.png)
+![alt tag](admin-client-show-page.png)
+![alt tag](client-show-page.png)
 
 
