@@ -1,8 +1,8 @@
-== Workout Tracker
+# Workout Tracker
 
 Web app developed for personal trainers to track clients’ fitness goals.
 
-Technologies Used:
+## Technologies Used
 
 * Ruby/Ruby on Rails
 * Javascript/jQuery/AJAX/D3.js
@@ -11,7 +11,7 @@ Technologies Used:
 * HTML/CSS/Bootstrap
 * RSpec/Factory girl/Capybara
 
-== Screenshots
+## Screenshots
 
 ![alt tag](/user-login.png)
 ![alt tag](/admin-page.png)
