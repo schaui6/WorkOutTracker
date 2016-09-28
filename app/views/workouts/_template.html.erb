@@ -3,6 +3,8 @@
   <!-- Workout templates -->
   <h2><small>Workout Templates</small></h2>
 
+
+<p><strong>Leg Exercises</strong></p>
   <!-- Squats template -->
   <%= form_for [@user, @workout] do |f| %>
     <%= f.label :phase %>
@@ -27,13 +29,94 @@
       [1,1],
       [2,2],
       [3,3],
-      [4,4]])) %>
-    <%= f.hidden_field :name, value: "squats" %>
-    <%= f.hidden_field :reps, value: 10 %>
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Squats" %>
+    <%= f.hidden_field :reps, value: 12 %>
+    <%= f.hidden_field :sets, value: 6 %>
+    <%= f.hidden_field :weight, value: "180 lbs" %>
+    <%= f.hidden_field :rest, value: "60 Seconds" %>
+    <%= f.submit "Squats 12-6-180" %>
+  <% end %>
+
+     <!-- Calf Raises template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Calf Raises" %>
+    <%= f.hidden_field :reps, value: 20 %>
     <%= f.hidden_field :sets, value: 3 %>
-    <%= f.hidden_field :weight, value: "BW" %>
-    <%= f.hidden_field :rest, value: "null" %>
-    <%= f.submit "Squats 10-3-BW" %>
+    <%= f.hidden_field :weight, value: "80 lbs" %>
+    <%= f.hidden_field :rest, value: "60 Seconds" %>
+    <%= f.submit "Calf Raises 20-3-80" %>
+  <% end %>
+
+     <!-- Step Ups template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Step Ups" %>
+    <%= f.hidden_field :reps, value: 12 %>
+    <%= f.hidden_field :sets, value: 3 %>
+    <%= f.hidden_field :weight, value: "10lbs" %>
+    <%= f.hidden_field :rest, value: "60 Seconds" %>
+    <%= f.submit "Step Ups 12-3-10" %>
   <% end %>
 
   <!-- Jump squats template -->
@@ -202,7 +285,509 @@
     <%= f.hidden_field :reps, value: 10 %>
     <%= f.hidden_field :sets, value: 3 %>
     <%= f.hidden_field :weight, value: "BW" %>
-    <%= f.hidden_field :rest, value: "null" %>
+    <%= f.hidden_field :rest, value: "60 Seconds" %>
     <%= f.submit "Sit-Ups 10-3-BW" %>
   <% end %>
+
+<p><strong>Press Exercises</strong></p>
+   <!-- Bench Press template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Bench Press" %>
+    <%= f.hidden_field :reps, value: 12 %>
+    <%= f.hidden_field :sets, value: 6 %>
+    <%= f.hidden_field :weight, value: "Barbell" %>
+    <%= f.hidden_field :rest, value: "60 Seconds" %>
+    <%= f.submit "Bench Press 12-6-Barbell" %>
+  <% end %>
+
+     <!-- Incline Bench Press template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Incline Bench Press" %>
+    <%= f.hidden_field :reps, value: 12 %>
+    <%= f.hidden_field :sets, value: 3 %>
+    <%= f.hidden_field :weight, value: "Barbell" %>
+    <%= f.hidden_field :rest, value: "60 Seconds" %>
+    <%= f.submit "Incline Bench Press 10-3-Barbell" %>
+  <% end %>
+
+     <!-- Decline Bench Press template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Decline Bench Press" %>
+    <%= f.hidden_field :reps, value: 12 %>
+    <%= f.hidden_field :sets, value: 3 %>
+    <%= f.hidden_field :weight, value: "Barbell" %>
+    <%= f.hidden_field :rest, value: "60 Seconds" %>
+    <%= f.submit "Decline 12-3-Barbell" %>
+  <% end %>
+
+     <!-- Triceps Press template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Triceps Press" %>
+    <%= f.hidden_field :reps, value: 12 %>
+    <%= f.hidden_field :sets, value: 3 %>
+    <%= f.hidden_field :weight, value: "50 lbs" %>
+    <%= f.hidden_field :rest, value: "60 Seconds" %>
+    <%= f.submit "Triceps Press 12-3-50-60" %>
+  <% end %>
+
+     <!-- Shoulder Press template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Shoulder Press" %>
+    <%= f.hidden_field :reps, value: 8 %>
+    <%= f.hidden_field :sets, value: 3 %>
+    <%= f.hidden_field :weight, value: "10lbs" %>
+    <%= f.hidden_field :rest, value: "60 Seconds" %>
+    <%= f.submit "Shoulder Press 8-3-BW" %>
+  <% end %>
+
+
+  <p><strong>Pull Exercises</strong></p>
+
+     <!-- Assisted Pull ups template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Assisted Pull Ups" %>
+    <%= f.hidden_field :reps, value: 10 %>
+    <%= f.hidden_field :sets, value: 6 %>
+    <%= f.hidden_field :weight, value: "100 lbs" %>
+    <%= f.hidden_field :rest, value: "60 Seconds" %>
+    <%= f.submit "Assisted Pull Ups 10-6-100" %>
+  <% end %>
+
+     <!-- Deadlifts template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Deadlifts" %>
+    <%= f.hidden_field :reps, value: 12 %>
+    <%= f.hidden_field :sets, value: 6 %>
+    <%= f.hidden_field :weight, value: "25 lbs" %>
+    <%= f.hidden_field :rest, value: "60 Seconds" %>
+    <%= f.submit "Deadlifts 12-6-25" %>
+  <% end %>
+
+     <!-- Lat Pull Downs template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Lat Pull Downs" %>
+    <%= f.hidden_field :reps, value: 12 %>
+    <%= f.hidden_field :sets, value: 3 %>
+    <%= f.hidden_field :weight, value: "120 lbs" %>
+    <%= f.hidden_field :rest, value: "60 Seconds" %>
+    <%= f.submit "Lat Pull Downs 12-3-120" %>
+  <% end %>
+
+       <!-- Barbell Rows template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Barbell Rows" %>
+    <%= f.hidden_field :reps, value: 12 %>
+    <%= f.hidden_field :sets, value: 3 %>
+    <%= f.hidden_field :weight, value: "25 lbs" %>
+    <%= f.hidden_field :rest, value: "60 Seconds" %>
+    <%= f.submit "Barbell Rows 12-3-25" %>
+  <% end %>
+
+  <!-- Cable Rows template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Cable Rows" %>
+    <%= f.hidden_field :reps, value: 12 %>
+    <%= f.hidden_field :sets, value: 3 %>
+    <%= f.hidden_field :weight, value: "100lbs" %>
+    <%= f.hidden_field :rest, value: "null" %>
+    <%= f.submit "Cable Rows 12-3-100" %>
+  <% end %>
+ 
+  
+     <!-- Hyperextensions template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Hyperextensions" %>
+    <%= f.hidden_field :reps, value: 12 %>
+    <%= f.hidden_field :sets, value: 3 %>
+    <%= f.hidden_field :weight, value: "Body Weight" %>
+    <%= f.hidden_field :rest, value: "null" %>
+    <%= f.submit "Hyperextensions 12-3-BW" %>
+  <% end %>
+
+<p><strong>Cardio Exercises</strong></p>
+         <!-- Walk for 1 hour template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Walk for 1 Hour" %>
+    <%= f.hidden_field :reps, value: 1 %>
+    <%= f.hidden_field :sets, value: 1 %>
+    <%= f.hidden_field :weight, value: "Body Weight" %>
+    <%= f.hidden_field :rest, value: "0 Seconds" %>
+    <%= f.submit "Walk for 1 Hour 1-1-BW" %>
+  <% end %>
+
+  <p><strong>Rest</strong></p>
+         <!-- Rest template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      ])) %>
+    <%= f.hidden_field :name, value: "Rest Day" %>
+    <%= f.hidden_field :reps, value: 0 %>
+    <%= f.hidden_field :sets, value: 0 %>
+    <%= f.hidden_field :weight, value: "Rest Day" %>
+    <%= f.hidden_field :rest, value: "0 Seconds" %>
+    <%= f.submit "Rest Day" %>
+  <% end %>
+
 </div>
