@@ -7,12 +7,17 @@
 
   <%= form_for [@user, @measurement] do |f| %>
 
-    
+    <%= f.label :photo %>
+    <%= f.file_field :photo %>
     <br>
     <br>
     
     <p>Weight:
     <%= f.text_field :weight, placeholder: "Weight" %>
+    </p>
+
+    <p>Age:
+    <%= f.text_field :age, placeholder: "Age" %>
     </p>
     
     <p>Waist:

@@ -47,6 +47,6 @@ class MeasurementsController < ApplicationController
     private
 
   def measurement_params
-    params.require(:measurement).permit(:weight, :waist, :neck, :chest, :hips, :body_fat)
+    params.require(:measurement).permit(:weight, :waist, :neck, :chest, :hips, :body_fat, :photo, :age)
   end
 end

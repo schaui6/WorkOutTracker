@@ -3,22 +3,22 @@ function graphOutWeight(){
 
     // Put all data for weight in this collection = [{x: day number, y: weight},{}]
     var lineData = [{
-      x: 0,
-      y: 210
+      x: 0,  //start of program
+      y: 250 //starting weight
     }, {
-      x: 20,
-      y: 200
+      x: 7, //first weigh in
+      y: 200 //weight of first weigh in
     }, {
-      x: 40,
-      y: 190
+      x: 14, //second weigh in
+      y: 190 //weight of second weigh in
     }, {
-      x: 60,
+      x: 21,
       y: 175
     }, {
-      x: 80,
+      x: 28,
       y: 170
     }, {
-      x: 100,
+      x: 35,
       y: 175
     }];
 
@@ -88,23 +88,23 @@ function graphOutBodyFat(){
 
     // Put all data for weight in this collection
       var lineData = [{
-      x: 1,
-      y: 15
+      x: 0,
+      y: 30.0
     }, {
-      x: 20,
-      y: 14
+      x: 7,
+      y: 29
     }, {
-      x: 40,
-      y: 13
+      x: 14,
+      y: 28
     }, {
-      x: 60,
-      y: 12
+      x: 21,
+      y: 28
     }, {
-      x: 80,
-      y: 11
+      x: 28,
+      y: 25
     }, {
-      x: 200,
-      y: 10
+      x: 35,
+      y: 20
     }];
 
 
@@ -163,3 +163,4 @@ function graphOutBodyFat(){
       .attr('stroke-width', 2)
       .attr('fill', 'none');
 }
+

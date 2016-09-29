@@ -1,5 +1,7 @@
 <% @measurements.each do |measurement| %>
+  <p><%= image_tag measurement.photo.url(:thumb)%></p>
   <p>Weight: <%= measurement.weight %> lbs</p>
+  <p>Age: <%= measurement.age %> lbs</p>
   <p>Waist: <%= measurement.waist %> in</p>
   <p>Neck: <%= measurement.neck %> in</p>
   <p>Chest: <%= measurement.chest %> in</p>

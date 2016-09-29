@@ -1,23 +1,24 @@
 class CreateMeasurements < ActiveRecord::Migration
   def change
     create_table :measurements do |t|
-      t.integer :weight
-      t.integer :height
-      t.integer :neck
-      t.integer :waist
-      t.integer :left_arm
-      t.integer :right_arm
-      t.integer :hips
-      t.integer :chest
-      t.integer :right_thigh
-      t.integer :left_thigh
+      t.float :weight
+      t.integer :age
+      t.float :height
+      t.float :neck
+      t.float :waist
+      t.float :left_arm
+      t.float :right_arm
+      t.float :hips
+      t.float :chest
+      t.float :right_thigh
+      t.float :left_thigh
       t.float :body_fat
-      t.integer :dead_lift
-      t.integer :bench_press
-      t.integer :squat
-      t.integer :lat_pull
+      t.float :dead_lift
+      t.float :bench_press
+      t.float :squat
+      t.float :lat_pull
       t.integer :user_id
-      t.string :img_url
+      t.attachment :photo
 
       t.timestamps null: false
     end
