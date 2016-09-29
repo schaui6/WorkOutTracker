@@ -1,13 +1,20 @@
 <% @measurements.each do |measurement| %>
   <p><%= image_tag measurement.photo.url(:thumb)%></p>
-  <p>Weight: <%= measurement.weight %> lbs</p>
-  <p>Age: <%= measurement.age %> lbs</p>
-  <p>Waist: <%= measurement.waist %> in</p>
-  <p>Neck: <%= measurement.neck %> in</p>
-  <p>Chest: <%= measurement.chest %> in</p>
-  <p>Hips: <%= measurement.hips %> in</p>
-  <p>Body Fat %: <%= measurement.body_fat %> %</p>
-  <p>Date: <%= measurement.created_at.strftime("%b. %d %Y") %></p>
+  <p><strong>Weight:</strong> <%= measurement.weight %> lbs</p>
+  <p><strong>Age:</strong> <%= measurement.age %></p>
+  <p><strong>Height:</strong> <%= measurement.height %> in</p>
+  <p><strong>Waist:</strong> <%= measurement.waist %> in</p>
+  <p><strong>Neck:</strong> <%= measurement.neck %> in</p>
+  <p><strong>Chest:</strong> <%= measurement.chest %> in</p>
+  <p><strong>Hips:</strong> <%= measurement.hips %> in</p>
+  <p><strong>Body Fat Percentage:</strong> <%= measurement.body_fat %> %</p>
+  <p><strong>Date: </strong><%= measurement.created_at.strftime("%b. %d %Y") %></p>
 
   <a href="/users/<%= @user.id %>/measurements/<%= measurement.id %>/edit"><button class="btn btn-lg btn-primary">Edit Measurements</button></a>
+
 <% end %>
+  <br>
+  <br>
+   <p><strong>BMI:</strong> <%= @bmi.round(2) %> kg/m²</p>
+  <p><strong>Fat Burning Zone:</strong> <%= @low_int_target_zone %></p>
+  <p><strong>Cardio Buring Zone:</strong> <%= @high_int_target_zone %></p>
