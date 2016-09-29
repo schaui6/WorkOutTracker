@@ -1,0 +1,11 @@
+<% @measurements.each do |measurement| %>
+  <p>Weight: <%= measurement.weight %> lbs</p>
+  <p>Waist: <%= measurement.waist %> in</p>
+  <p>Neck: <%= measurement.neck %> in</p>
+  <p>Chest: <%= measurement.chest %> in</p>
+  <p>Hips: <%= measurement.hips %> in</p>
+  <p>Body Fat %: <%= measurement.body_fat %> %</p>
+  <p>Date: <%= measurement.created_at.strftime("%b. %d %Y") %></p>
+
+  <a href="/users/<%= @user.id %>/measurements/<%= measurement.id %>/edit"><button class="btn btn-lg btn-primary">Edit Measurements</button></a>
+<% end %>

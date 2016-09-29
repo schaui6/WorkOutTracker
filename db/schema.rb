@@ -18,14 +18,24 @@ ActiveRecord::Schema.define(version: 20160605035610) do
 
   create_table "measurements", force: :cascade do |t|
     t.integer  "weight"
-    t.integer  "body_fat"
+    t.integer  "height"
+    t.integer  "neck"
+    t.integer  "waist"
+    t.integer  "left_arm"
+    t.integer  "right_arm"
+    t.integer  "hips"
+    t.integer  "chest"
+    t.integer  "right_thigh"
+    t.integer  "left_thigh"
+    t.float    "body_fat"
     t.integer  "dead_lift"
     t.integer  "bench_press"
     t.integer  "squat"
     t.integer  "lat_pull"
-    t.string   "img_url",     limit: 255
-    t.datetime "created_at",              null: false
-    t.datetime "updated_at",              null: false
+    t.integer  "user_id"
+    t.string   "img_url"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
   end
 
   create_table "progresses", force: :cascade do |t|
@@ -36,12 +46,12 @@ ActiveRecord::Schema.define(version: 20160605035610) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "name",                limit: 255
-    t.string   "email",               limit: 255
-    t.string   "password_digest",     limit: 255
-    t.boolean  "admin",                           default: false
-    t.datetime "created_at",                                      null: false
-    t.datetime "updated_at",                                      null: false
+    t.string   "name"
+    t.string   "email"
+    t.string   "password_digest"
+    t.boolean  "admin",               default: false
+    t.datetime "created_at",                          null: false
+    t.datetime "updated_at",                          null: false
     t.string   "avatar_file_name"
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
@@ -49,18 +59,18 @@ ActiveRecord::Schema.define(version: 20160605035610) do
   end
 
   create_table "workouts", force: :cascade do |t|
-    t.string   "name",       limit: 255,                 null: false
-    t.integer  "reps",                                   null: false
-    t.integer  "sets",                                   null: false
-    t.string   "weight",     limit: 255,                 null: false
-    t.boolean  "completed",              default: false
+    t.string   "name",                       null: false
+    t.integer  "reps",                       null: false
+    t.integer  "sets",                       null: false
+    t.string   "weight",                     null: false
+    t.boolean  "completed",  default: false
     t.integer  "user_id"
-    t.integer  "phase",                                  null: false
-    t.integer  "rest",                                   null: false
-    t.integer  "day",                                    null: false
-    t.string   "note",       limit: 255
-    t.datetime "created_at",                             null: false
-    t.datetime "updated_at",                             null: false
+    t.integer  "phase",                      null: false
+    t.integer  "rest",                       null: false
+    t.integer  "day",                        null: false
+    t.string   "note"
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
   end
 
 end

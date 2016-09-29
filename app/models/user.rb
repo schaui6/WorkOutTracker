@@ -5,7 +5,7 @@ class User < ActiveRecord::Base
   has_many :workouts
 
   has_many :progresses
-  has_many :measurements, through: :progresses
+  has_many :measurements
 
   validates :name, presence: true
   validates :email, presence: true, uniqueness: true
