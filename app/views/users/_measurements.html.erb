@@ -1,3 +1,4 @@
+
     <div id="mlist">
       <table id="measurement" class="table table-striped">
         <tr>
@@ -11,27 +12,28 @@
 
         <tr> <!-- Add measurement to iterate last measurements -->
           <td>Weight:</td>
-          <td>50 LB</td>
+          <td><%= @measurement.weight %></td>
         </tr>
         <tr>
-          <td>Body Fat:</td>
-          <td>12 %</td>
+          <td>Body Fat %:</td>
+          <td><%= @measurement.body_fat %></td>
         </tr>
         <tr>
-          <td>Dead Lift:</td>
-          <td>12 LB</td>
+          <td>Waist:</td>
+          <td><%= @measurement.waist %></td>
         </tr>
         <tr>
-          <td>Bench Press:</td>
-          <td>12 LB</td>
+          <td>Neck:</td>
+          <td><%= @measurement.neck %></td>
         </tr>
         <tr>
-          <td>Squat:</td>
-          <td>12 LB</td>
+          <td>Chest:</td>
+          <td><%= @measurement.chest %></td>
         </tr>
         <tr>
-          <td>Lat Pull Down:</td>
-          <td>12 LB</td>
+          <td>Hips:</td>
+          <td><%= @measurement.hips %></td>
         </tr>
       </table>
     </div>
+
