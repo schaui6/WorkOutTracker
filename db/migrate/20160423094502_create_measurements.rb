@@ -2,6 +2,8 @@ class CreateMeasurements < ActiveRecord::Migration
   def change
     create_table :measurements do |t|
       t.float :weight
+      t.float :wrist
+      t.float :forearm
       t.integer :age
       t.float :height
       t.float :neck
@@ -18,6 +20,7 @@ class CreateMeasurements < ActiveRecord::Migration
       t.float :squat
       t.float :lat_pull
       t.integer :user_id
+      t.string :gender
       t.attachment :photo
 
       t.timestamps null: false

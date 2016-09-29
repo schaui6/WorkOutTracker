@@ -18,6 +18,8 @@ ActiveRecord::Schema.define(version: 20160605035610) do
 
   create_table "measurements", force: :cascade do |t|
     t.float    "weight"
+    t.float    "wrist"
+    t.float    "forearm"
     t.integer  "age"
     t.float    "height"
     t.float    "neck"
@@ -34,6 +36,7 @@ ActiveRecord::Schema.define(version: 20160605035610) do
     t.float    "squat"
     t.float    "lat_pull"
     t.integer  "user_id"
+    t.string   "gender"
     t.string   "photo_file_name"
     t.string   "photo_content_type"
     t.integer  "photo_file_size"
@@ -53,6 +56,8 @@ ActiveRecord::Schema.define(version: 20160605035610) do
     t.string   "name"
     t.string   "email"
     t.string   "password_digest"
+    t.string   "gender"
+    t.integer  "age"
     t.boolean  "admin",               default: false
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false

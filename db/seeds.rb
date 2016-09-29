@@ -8,9 +8,9 @@
 
 
 # Create 3 known users
-eddy = User.create(name: "Eddy Agguire", email: "eddy@gmail.com", password: "password", admin: true)
-aaron = User.create(name: "Aaron", email: "aaron@aaron.com", password: "password", admin: false)
-sanderfer = User.create(name: "Sanderfer Chau", email: "san@gmail.com", password: "password", admin: false)
+eddy = User.create(name: "Eddy Agguire", email: "eddy@gmail.com", password: "password", admin: true, gender: "male")
+Ciny = User.create(name: "Cindy", email: "cindy@gmail.com", password: "password", admin: false, gender: "female")
+sanderfer = User.create(name: "Sanderfer Chau", email: "san@gmail.com", password: "password", admin: false, gender: "male")
 
 
 # Create fake Users
