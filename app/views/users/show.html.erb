@@ -8,7 +8,13 @@
 
 
       <!-- Title of client -->
-      <%= image_tag @user.avatar.url(:thumb), class: "avatar" %>
+      <!-- < %= image_tag @user.avatar.url(:thumb), class: "avatar" %> -->
+      <!-- demo avatar -->
+      <% if @user.gender == "male" %>
+        <img src="http://www.naturaloil.ph/wp-content/uploads/2015/11/John_Doe.jpg" class="avatar">
+      <% else %>
+        <img src="http://irishdeaths.com/wp-content/uploads/2014/03/Jane-Doe-3.jpg" class="avatar">
+      <% end %>
       <h1><%= @user.first_name.capitalize %>'s Progress</h1>
       <h3>(<%= @user.email %>)</h3>
       <!-- End of title of client -->
