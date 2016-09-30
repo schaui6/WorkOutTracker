@@ -25,6 +25,8 @@ Try it out!
 ![alt tag](/admin-cs.png)
 ###### Admin Page - Create Client Workout Page
 ![alt tag](/admin-cr.png)
+###### Admin Page - Add Client measurements Page
+![alt tag](/admin-am.png)
 ###### Client Page - Show Page
 ![alt tag](/client-show-page.png)
 
