@@ -31,6 +31,11 @@ Try it out!
 ![alt tag](/admin-cm.png)
 ###### Client Page - Show Page
 ![alt tag](/profile.png)
+###### Client Page - Show Measurements
+![alt tag](/profile-ms.png)
+###### Client Page - Show Graphs
+![alt tag](/profile-gs.png)
+
 
 
 
