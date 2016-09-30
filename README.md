@@ -20,7 +20,7 @@ Try it out!
 ###### User Login
 ![alt tag](/user-login.png)
 ###### Admin Page
-![alt tag](/admin-page.png)
+![alt tag](/admin.png)
 ###### Admin Page - Client Show Page
 ![alt tag](/admin-client-show-page.png)
 ###### Client Page - Show Page
