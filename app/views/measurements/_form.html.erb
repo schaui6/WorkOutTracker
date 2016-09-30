@@ -1,0 +1,45 @@
+<div class="container">
+  <div class="page-header">
+    <h1><small>Add a measurement for</small> <%= @user.first_name.capitalize %></h1>
+  </div>
+
+
+
+  <%= form_for [@user, @measurement] do |f| %>
+
+    <%= f.label :photo %>
+    <%= f.file_field :photo %>
+    <br>
+    <br>
+    
+    <p>Wrist:
+    <%= f.text_field :wrist, placeholder: "Wrist in inches" %>
+    </p>
+
+    <p>Forearm:
+    <%= f.text_field :forearm, placeholder: "Forearm in inches" %>
+    </p>
+    
+     <p>Waist:
+   <%= f.text_field :waist, placeholder: "Waist in inches" %>
+    </p>
+    
+    <p>Neck:
+    <%= f.text_field :neck, placeholder: "Neck in inches" %>
+    </p>
+    
+    <p>Chest:
+    <%= f.text_field :chest, placeholder: "Chest in inches" %>
+    </p>
+    
+    <p>Hips:
+    <%= f.text_field :hips, placeholder: "Hips in inches" %>
+    </p>
+
+    <p>Body Fat %:
+    <%= f.text_field :body_fat, placeholder: "Body Fat %" %>
+    </p>
+
+
+    <%= f.submit "Submit" %>
+  <% end %>

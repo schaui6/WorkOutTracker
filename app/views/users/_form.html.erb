@@ -1,14 +1,56 @@
+<!-- todos: -->
+    <!-- add gender and link it to measurements.gender for calculations & for edit/new-->
+
 <%= form_for @user, html: { multipart: true } do |f| %>
 
   <%= f.label :avatar %>
   <%= f.file_field :avatar %>
   <br>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
+  <%= f.label :age, "Age" %>
+  <%= f.text_field :age %>
+  <br>
+  <%= f.label :first_name, "First Name" %>
+  <%= f.text_field :first_name %>
+  <br>
+  <%= f.label :last_name, "Last Name" %>
+  <%= f.text_field :last_name %>
   <br>
   <%= f.label :email %>
-  <%= f.email_field :email %>
+  <%= f.email_field :email.downcase %>
   <br>
+  <%= f.label :weight, "Weight" %>
+  <%= f.text_field :weight %>
+  <br>
+  <%= f.label :height, "Height" %>
+  <%= f.text_field :height %>
+  <br>
+  <%= f.label :wrist, "Wrist" %>
+  <%= f.text_field :wrist %>
+  <br>
+  <%= f.label :waist, "Waist" %>
+  <%= f.text_field :waist %>
+  <br>
+  <%= f.label :forearm, "Forearm" %>
+  <%= f.text_field :forearm %>
+  <br>
+  <%= f.label :hips, "Hips" %>
+  <%= f.text_field :hips %>
+  <br>
+  <%= f.label :chest, "Chest" %>
+  <%= f.text_field :chest %>
+  <br>
+  <%= f.label :neck, "Neck" %>
+  <%= f.text_field :neck %>
+  <br>
+  <%= f.label :gender %>
+    <%= f.select(:gender, options_for_select([
+      ["male","male"],
+      ["female","female"],
+      ])) %>
+  <br>
+ 
+
+
   <%= f.label :password %>
   <%= f.password_field :password %>
   <br>

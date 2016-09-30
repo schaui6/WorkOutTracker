@@ -3,14 +3,20 @@
 
      <div class="profile-container">
     <!-- Avatar image -->
-    <%= image_tag @user.avatar.url(:thumb), class: "avatar" %>
+    <!-- < %= image_tag @user.avatar.url(:thumb), class: "avatar" %> -->
+    <!-- demo avatar -->
+    <% if @user.gender == "male" %>
+      <img src="http://www.naturaloil.ph/wp-content/uploads/2015/11/John_Doe.jpg" class="avatar">
+    <% else %>
+      <img src="http://irishdeaths.com/wp-content/uploads/2014/03/Jane-Doe-3.jpg" class="avatar">
+    <% end %>
 
     <br>
 
-    <strong><%= current_user.name %></strong>
+    <strong><%= current_user.first_name %></strong>
     </div> 
 
-    <div align="center">Congratulations <strong><%= @user.name.capitalize %></strong> For Making It This Far!<br>
+    <div align="center">Congratulations <strong><%= @user.first_name.capitalize %></strong> For Making It This Far!<br>
     Here is Your Progress:
     </div>    
     <br><br>
@@ -23,10 +29,12 @@
           <button type="button" class="btn btn-default">Progress</button>
           <button id="show-measurements" type="button" class="btn btn-default">Measurements</button>
           <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <span class="glyphicon glyphicon-user"></span>  <%= current_user.name %> <span class="caret"></span>
+            <span class="glyphicon glyphicon-user"></span>  <%= current_user.first_name %> <span class="caret"></span>
           </button>
           <ul class="dropdown-menu">
-            <li><%= link_to "logout", {:controller=> "sessions", :action=> "destroy"}, method: :delete %></li>
+            <li><%= link_to "Log Out", {:controller=> "sessions", :action=> "destroy"}, method: :delete %></li>
+            <li><%= link_to "Edit Profile", edit_user_path(@user) %></li> 
+
           </ul>
         </div>
       </center>

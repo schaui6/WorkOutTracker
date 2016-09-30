@@ -17,15 +17,30 @@ ActiveRecord::Schema.define(version: 20160605035610) do
   enable_extension "plpgsql"
 
   create_table "measurements", force: :cascade do |t|
-    t.integer  "weight"
-    t.integer  "body_fat"
-    t.integer  "dead_lift"
-    t.integer  "bench_press"
-    t.integer  "squat"
-    t.integer  "lat_pull"
-    t.string   "img_url"
-    t.datetime "created_at",  null: false
-    t.datetime "updated_at",  null: false
+    t.float    "weight"
+    t.float    "wrist"
+    t.float    "forearm"
+    t.float    "height"
+    t.float    "neck"
+    t.float    "waist"
+    t.float    "left_arm"
+    t.float    "right_arm"
+    t.float    "hips"
+    t.float    "chest"
+    t.float    "right_thigh"
+    t.float    "left_thigh"
+    t.float    "body_fat"
+    t.float    "dead_lift"
+    t.float    "bench_press"
+    t.float    "squat"
+    t.float    "lat_pull"
+    t.integer  "user_id"
+    t.string   "photo_file_name"
+    t.string   "photo_content_type"
+    t.integer  "photo_file_size"
+    t.datetime "photo_updated_at"
+    t.datetime "created_at",         null: false
+    t.datetime "updated_at",         null: false
   end
 
   create_table "progresses", force: :cascade do |t|
@@ -36,9 +51,21 @@ ActiveRecord::Schema.define(version: 20160605035610) do
   end
 
   create_table "users", force: :cascade do |t|
-    t.string   "name"
+    t.string   "first_name"
+    t.string   "last_name"
     t.string   "email"
     t.string   "password_digest"
+    t.string   "gender"
+    t.integer  "age"
+    t.float    "height"
+    t.float    "weight"
+    t.float    "waist"
+    t.float    "wrist"
+    t.float    "forearm"
+    t.float    "body_fat"
+    t.float    "neck"
+    t.float    "chest"
+    t.float    "hips"
     t.boolean  "admin",               default: false
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false

@@ -1,0 +1,20 @@
+<% @measurements.each do |measurement| %>
+  <p><strong>Weight:</strong> <%= measurement.weight %> lbs</p>
+  <p><strong>Wrist:</strong> <%= measurement.wrist %> in</p>
+  <p><strong>Forearm:</strong> <%= measurement.forearm %> in</p>
+  <p><strong>Waist:</strong> <%= measurement.waist %> in</p>
+  <p><strong>Neck:</strong> <%= measurement.neck %> in</p>
+  <p><strong>Chest:</strong> <%= measurement.chest %> in</p>
+  <p><strong>Hips:</strong> <%= measurement.hips %> in</p>
+  <p><strong>Body Fat Percentage:</strong> <%= measurement.body_fat.round(2) %> %</p>
+  <p><strong>Date: </strong><%= measurement.created_at.strftime("%b. %d %Y") %></p>
+  <a href="/users/<%= @user.id %>/measurements/<%= measurement.id %>/edit"><button class="btn btn-lg btn-primary">Edit Measurements</button></a>
+
+<% end %>
+  <br>
+  <br>
+  <p><strong>Body Fat:</strong> <%= @body_fat.round(2) if @body_fat != nil%> %</p>
+  <p><strong>BMI:</strong> <%= @bmi.round(2) if @bmi != nil%> kg/m²</p>
+  <p><strong>BMR:</strong> <%= @bmr.round(0) if @bmr != nil%> calories/day (Mifflin - St Jeor equation)</p>
+  <p><strong>Fat Burning Zone:</strong> <%= @low_int_target_zone.round(2) %></p>
+  <p><strong>Cardio Buring Zone:</strong> <%= @high_int_target_zone.round(2) %></p>
