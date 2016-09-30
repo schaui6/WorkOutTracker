@@ -1,6 +1,6 @@
 <div class="container">
   <div class="page-header">
-    <h1><small>Add a measurement for</small> <%= @user.name.capitalize %></h1>
+    <h1><small>Add a measurement for</small> <%= @user.first_name.capitalize %></h1>
   </div>
 
 
@@ -12,14 +12,6 @@
     <br>
     <br>
     
-    <p>Weight:
-    <%= f.text_field :weight, placeholder: "Weight in pounds" %>
-    </p>
-
-    <p>Height:
-    <%= f.text_field :height, placeholder: "Height in inches" %>
-    </p>
-
     <p>Wrist:
     <%= f.text_field :wrist, placeholder: "Wrist in inches" %>
     </p>
@@ -27,13 +19,9 @@
     <p>Forearm:
     <%= f.text_field :forearm, placeholder: "Forearm in inches" %>
     </p>
-
-    <p>Age:
-    <%= f.text_field :age, placeholder: "Age" %>
-    </p>
     
-    <p>Waist:
-    <%= f.text_field :waist, placeholder: "Waist in inches" %>
+     <p>Waist:
+   <%= f.text_field :waist, placeholder: "Waist in inches" %>
     </p>
     
     <p>Neck:
@@ -52,9 +40,6 @@
     <%= f.text_field :body_fat, placeholder: "Body Fat %" %>
     </p>
 
-    <p>Gender:
-    <%= f.text_field :gender, placeholder: "Gender" %>
-    </p>
 
     <%= f.submit "Submit" %>
   <% end %>

@@ -8,7 +8,8 @@
 
 
       <!-- Title of client -->
-      <h1><%= @user.name.capitalize %>'s Progress</h1>
+      <%= image_tag @user.avatar.url(:thumb), class: "avatar" %>
+      <h1><%= @user.first_name.capitalize %>'s Progress</h1>
       <h3>(<%= @user.email %>)</h3>
       <!-- End of title of client -->
 
@@ -28,6 +29,7 @@
 <% elsif current_user && current_user.admin != true %>
     <!-- Start of user's view -->
     <%= render 'client_show_heading' %>
+
 
     <%= render 'measurements' %>
 

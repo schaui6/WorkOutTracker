@@ -8,9 +8,9 @@
 
 
 # Create 3 known users
-eddy = User.create(name: "Eddy Agguire", email: "eddy@gmail.com", password: "password", admin: true, gender: "male")
-Ciny = User.create(name: "Cindy", email: "cindy@gmail.com", password: "password", admin: false, gender: "female")
-sanderfer = User.create(name: "Sanderfer Chau", email: "san@gmail.com", password: "password", admin: false, gender: "male")
+eddy = User.create(first_name: "Eddy", last_name: "Agguire", email: "eddy@gmail.com", password: "password", admin: true, gender: "male", age: 33, height: 65.0, weight: 185.0, waist: 32.0, wrist: 7, forearm: 9.5, hips: 40.5, chest: 44, neck: 17, body_fat: 20)
+cindy = User.create(first_name: "Cindy", last_name: "Williams", email: "cindy@gmail.com", password: "password", admin: false, gender: "female", age: 30, height: 60.0, weight: 105.0, waist: 23.0, wrist: 4, forearm: 4.5, hips: 20.5, chest: 20, neck: 7, body_fat: 20)
+sanderfer = User.create(first_name: "Sanderfer", last_name: "Chau", email: "san@gmail.com", password: "password", admin: false, gender: "male", age: 33, height: 69.0, weight: 213.4, waist: 40.5, wrist: 7, forearm: 9.5, hips: 40.5, chest: 44, neck: 17, body_fat: 30)
 
 
 # Create fake Users

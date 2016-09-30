@@ -12,27 +12,27 @@
 
         <tr> <!-- Add measurement to iterate last measurements -->
           <td>Weight:</td>
-          <td><%= @measurement.weight %></td>
+          <td><%= @user.weight.round(2) %></td>
         </tr>
         <tr>
           <td>Body Fat %:</td>
-          <td><%= @measurement.body_fat %></td>
+          <td><%= @user.body_fat.round(2) %></td>
         </tr>
         <tr>
           <td>Waist:</td>
-          <td><%= @measurement.waist %></td>
+          <td><%= @user.waist.round(2) %></td>
         </tr>
         <tr>
           <td>Neck:</td>
-          <td><%= @measurement.neck %></td>
+          <td><%= @user.neck.round(2) %></td>
         </tr>
         <tr>
           <td>Chest:</td>
-          <td><%= @measurement.chest %></td>
+          <td><%= @user.chest.round(2) %></td>
         </tr>
         <tr>
           <td>Hips:</td>
-          <td><%= @measurement.hips %></td>
+          <td><%= @user.hips.round(2) %></td>
         </tr>
       </table>
     </div>
