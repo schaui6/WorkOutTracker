@@ -22,7 +22,7 @@ Try it out!
 ###### Admin Page
 ![alt tag](/admin.png)
 ###### Admin Page - Client Show Page
-![alt tag](/admin-client-show-page.png)
+![alt tag](/admin-client-cs.png)
 ###### Client Page - Show Page
 ![alt tag](/client-show-page.png)
 
