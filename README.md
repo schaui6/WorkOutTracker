@@ -23,6 +23,8 @@ Try it out!
 ![alt tag](/admin.png)
 ###### Admin Page - Client Show Page
 ![alt tag](/admin-cs.png)
+###### Admin Page - Create Client Workout Page
+![alt tag](/admin-cr.png)
 ###### Client Page - Show Page
 ![alt tag](/client-show-page.png)
 
