@@ -1,48 +1,66 @@
 <!-- todos: -->
     <!-- add gender and link it to measurements.gender for calculations & for edit/new-->
 
+<div class="cover"></div>
+
+<div class="profile-container"></div> 
+<center>
 <%= form_for @user, html: { multipart: true } do |f| %>
 
-  <%= f.label :avatar %>
+  <%= f.label :avatar, "Profile Photo: " %>
+  <br>
   <%= f.file_field :avatar %>
   <br>
-  <%= f.label :age, "Age" %>
+  <%= f.label :age, "Age: " %>
+  <br>
   <%= f.text_field :age %>
   <br>
-  <%= f.label :first_name, "First Name" %>
+  <%= f.label :first_name, "First Name: " %>
+  <br>
   <%= f.text_field :first_name %>
   <br>
-  <%= f.label :last_name, "Last Name" %>
+  <%= f.label :last_name, "Last Name: " %>
+  <br>
   <%= f.text_field :last_name %>
   <br>
-  <%= f.label :email %>
-  <%= f.email_field :email.downcase %>
+  <%= f.label :email, "Email: " %>
   <br>
-  <%= f.label :weight, "Weight" %>
+  <%= f.email_field :email %>
+  <br>
+  <%= f.label :weight, "Weight: " %>
+  <br>
   <%= f.text_field :weight %>
   <br>
-  <%= f.label :height, "Height" %>
+  <%= f.label :height, "Height: " %>
+  <br>
   <%= f.text_field :height %>
   <br>
-  <%= f.label :wrist, "Wrist" %>
+  <%= f.label :wrist, "Wrist: " %>
+  <br>
   <%= f.text_field :wrist %>
   <br>
-  <%= f.label :waist, "Waist" %>
+  <%= f.label :waist, "Waist: " %>
+  <br>
   <%= f.text_field :waist %>
   <br>
-  <%= f.label :forearm, "Forearm" %>
+  <%= f.label :forearm, "Forearm: " %>
+  <br>
   <%= f.text_field :forearm %>
   <br>
-  <%= f.label :hips, "Hips" %>
+  <%= f.label :hips, "Hips: " %>
+  <br>
   <%= f.text_field :hips %>
   <br>
-  <%= f.label :chest, "Chest" %>
+  <%= f.label :chest, "Chest: " %>
+  <br>
   <%= f.text_field :chest %>
   <br>
-  <%= f.label :neck, "Neck" %>
+  <%= f.label :neck, "Neck: " %>
+  <br>
   <%= f.text_field :neck %>
   <br>
-  <%= f.label :gender %>
+  <%= f.label :gender, "Gender: " %>
+  <br>
     <%= f.select(:gender, options_for_select([
       ["male","male"],
       ["female","female"],
@@ -51,13 +69,16 @@
  
 
 
-  <%= f.label :password %>
+  <%= f.label :password, "Password" %>
+  <br>
   <%= f.password_field :password %>
   <br>
-  <%= f.label :password_confirmation, "Confirmation" %>
+  <%= f.label :password_confirmation, "Password Confirmation: " %>
+  <br>
   <%= f.password_field :password_confirmation %>
   <br>
   <%= f.submit "Save changes" %>
   <br>
   <%= link_to 'Back', users_path %>
 <% end %>
+</center>

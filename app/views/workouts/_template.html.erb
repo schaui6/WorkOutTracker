@@ -4,7 +4,7 @@
   <h2><small>Workout Templates</small></h2>
 
 
-<p><strong>Leg Exercises</strong></p>
+<h3><strong>Leg Exercises</strong></h3>
   <!-- Squats template -->
   <%= form_for [@user, @workout] do |f| %>
     <%= f.label :phase %>
@@ -34,6 +34,11 @@
       [6,6],
       [7,7],
       [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
       ])) %>
     <%= f.hidden_field :name, value: "Squats" %>
     <%= f.hidden_field :reps, value: 12 %>
@@ -72,6 +77,11 @@
       [6,6],
       [7,7],
       [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
       ])) %>
     <%= f.hidden_field :name, value: "Calf Raises" %>
     <%= f.hidden_field :reps, value: 20 %>
@@ -81,7 +91,7 @@
     <%= f.submit "Calf Raises 20-3-80" %>
   <% end %>
 
-     <!-- Step Ups template -->
+  <!-- Step Ups template -->
   <%= form_for [@user, @workout] do |f| %>
     <%= f.label :phase %>
     <%= f.select(:phase, options_for_select([
@@ -120,7 +130,6 @@
   <% end %>
 
   <!-- Jump squats template -->
-  <br />
   <%= form_for [@user, @workout] do |f| %>
     <%= f.label :phase %>
     <%= f.select(:phase, options_for_select([
@@ -153,76 +162,7 @@
     <%= f.submit "Jump Squats 10-3-BW" %>
   <% end %>
 
-  <!-- Push Up template -->
-  <br />
-  <%= form_for [@user, @workout] do |f| %>
-    <%= f.label :phase %>
-    <%= f.select(:phase, options_for_select([
-      [1,1],
-      [2,2],
-      [3,3],
-      [4,4],
-      [5,5],
-      [6,6],
-      [7,7],
-      [8,8],
-      [9,9],
-      [10,10],
-      [11,11],
-      [12,12],
-      [13,13],
-      ])) %>
-
-    <%= f.label :day %>
-    <%= f.select(:day, options_for_select([
-      [1,1],
-      [2,2],
-      [3,3],
-      [4,4]])) %>
-    <%= f.hidden_field :name, value: "push-ups" %>
-    <%= f.hidden_field :reps, value: 10 %>
-    <%= f.hidden_field :sets, value: 3 %>
-    <%= f.hidden_field :weight, value: "BW" %>
-    <%= f.hidden_field :rest, value: "null" %>
-    <%= f.submit "Push-Ups 10-3-BW" %>
-  <% end %>
-
-  <!-- Mountian Climbers template -->
-  <br />
-  <%= form_for [@user, @workout] do |f| %>
-    <%= f.label :phase %>
-    <%= f.select(:phase, options_for_select([
-      [1,1],
-      [2,2],
-      [3,3],
-      [4,4],
-      [5,5],
-      [6,6],
-      [7,7],
-      [8,8],
-      [9,9],
-      [10,10],
-      [11,11],
-      [12,12],
-      [13,13],
-      ])) %>
-
-    <%= f.label :day %>
-    <%= f.select(:day, options_for_select([
-      [1,1],
-      [2,2],
-      [3,3],
-      [4,4]])) %>
-    <%= f.hidden_field :name, value: "mtn climbers" %>
-    <%= f.hidden_field :reps, value: 10 %>
-    <%= f.hidden_field :sets, value: 3 %>
-    <%= f.hidden_field :weight, value: "BW" %>
-    <%= f.hidden_field :rest, value: "null" %>
-    <%= f.submit "Mtn Climbers 10-3-BW" %>
-  <% end %>
-
   <!-- Frog Jumps template -->
-  <br />
   <%= form_for [@user, @workout] do |f| %>
     <%= f.label :phase %>
     <%= f.select(:phase, options_for_select([
@@ -254,9 +194,13 @@
     <%= f.hidden_field :rest, value: "null" %>
     <%= f.submit "Frog Jumps 10-3-BW" %>
   <% end %>
+  <br>
 
+  
+
+
+<h3><strong>Core Exercises</strong></h3>
   <!-- Sit-ups template -->
-  <br />
   <%= form_for [@user, @workout] do |f| %>
     <%= f.label :phase %>
     <%= f.select(:phase, options_for_select([
@@ -288,8 +232,10 @@
     <%= f.hidden_field :rest, value: "60 Seconds" %>
     <%= f.submit "Sit-Ups 10-3-BW" %>
   <% end %>
+    <br>
 
-<p><strong>Press Exercises</strong></p>
+
+<h3><strong>Press Exercises</strong></h3>
    <!-- Bench Press template -->
   <%= form_for [@user, @workout] do |f| %>
     <%= f.label :phase %>
@@ -480,8 +426,74 @@
     <%= f.submit "Shoulder Press 8-3-BW" %>
   <% end %>
 
+  <!-- Push Up template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
 
-  <p><strong>Pull Exercises</strong></p>
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4]])) %>
+    <%= f.hidden_field :name, value: "push-ups" %>
+    <%= f.hidden_field :reps, value: 10 %>
+    <%= f.hidden_field :sets, value: 3 %>
+    <%= f.hidden_field :weight, value: "BW" %>
+    <%= f.hidden_field :rest, value: "null" %>
+    <%= f.submit "Push-Ups 10-3-BW" %>
+  <% end %>
+
+  <!-- Mountian Climbers template -->
+  <%= form_for [@user, @workout] do |f| %>
+    <%= f.label :phase %>
+    <%= f.select(:phase, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4],
+      [5,5],
+      [6,6],
+      [7,7],
+      [8,8],
+      [9,9],
+      [10,10],
+      [11,11],
+      [12,12],
+      [13,13],
+      ])) %>
+
+    <%= f.label :day %>
+    <%= f.select(:day, options_for_select([
+      [1,1],
+      [2,2],
+      [3,3],
+      [4,4]])) %>
+    <%= f.hidden_field :name, value: "mtn climbers" %>
+    <%= f.hidden_field :reps, value: 10 %>
+    <%= f.hidden_field :sets, value: 3 %>
+    <%= f.hidden_field :weight, value: "BW" %>
+    <%= f.hidden_field :rest, value: "null" %>
+    <%= f.submit "Mtn Climbers 10-3-BW" %>
+  <% end %>
+
+
+  <h3><strong>Pull Exercises</strong></h3>
 
      <!-- Assisted Pull ups template -->
   <%= form_for [@user, @workout] do |f| %>
@@ -712,7 +724,7 @@
     <%= f.submit "Hyperextensions 12-3-BW" %>
   <% end %>
 
-<p><strong>Cardio Exercises</strong></p>
+<h3><strong>Cardio Exercises</strong></h3>
          <!-- Walk for 1 hour template -->
   <%= form_for [@user, @workout] do |f| %>
     <%= f.label :phase %>
@@ -751,7 +763,7 @@
     <%= f.submit "Walk for 1 Hour 1-1-BW" %>
   <% end %>
 
-  <p><strong>Rest</strong></p>
+  <h3><strong>Rest</strong></h3>
          <!-- Rest template -->
   <%= form_for [@user, @workout] do |f| %>
     <%= f.label :phase %>

@@ -1,3 +1,7 @@
+<div class="cover"></div>
+
+<div class="profile-container"></div> 
+
 <head>
   <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
   <script src="//code.jquery.com/jquery-1.10.2.js"></script>
@@ -13,7 +17,9 @@
       <% end %>
       <!-- End of flash message -->
 
-<h1>Edit a workout for <%= @user.name.capitalize %></h1>
+  <div class="page-header">
+    <h1><small>Edit a workout for</small> <%= @user.first_name.capitalize %></h1>
+  </div>
 
 <%= render 'form' %>
 
