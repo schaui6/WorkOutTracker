@@ -30,6 +30,7 @@ Try it out!
 ###### Admin Page - Automate Calculated Measurements Page
 ![alt tag](/admin-cm.png)
 ###### Client Page - Show Page
-![alt tag](/client-show-page.png)
+![alt tag](/profile.png)
+
 
 
