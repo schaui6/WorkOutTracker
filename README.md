@@ -1,17 +1,22 @@
 # Workout Tracker
 
 Web app developed for personal trainers to track clients’ fitness goals.
-Try it out! 
+Try it out!
 * https://ancient-ridge-45228.herokuapp.com/
 
 ## Technologies Used
 
 * Ruby/Ruby on Rails
-* Javascript/jQuery/AJAX/D3.js
+* Javascript/jQuery/AJAX
 * Paperclip
 * Bcrypt
 * HTML/CSS/Bootstrap
 * RSpec/factory_girl/Capybara
+
+## To Dos:
+
+* Graph client results using D3
+* Write algorithm to calculate macronutrients recommended for client.
 
 ## Screenshots
 ###### User Login
@@ -32,7 +37,3 @@ Try it out!
 ![alt tag](/profile-ms.png)
 ###### Client Page - Show Graphs
 ![alt tag](/profile-gs.png)
-
-
-
-
