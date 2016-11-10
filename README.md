@@ -23,6 +23,7 @@ Try it out! [Workout Tracker](https://ancient-ridge-45228.herokuapp.com/ "Workou
 
 * Graph client results using D3
 * Write algorithm to calculate macronutrients recommended for client.
+* Implement mem-caching
 
 ## Screenshots
 ###### User Login
