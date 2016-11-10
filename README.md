@@ -24,6 +24,8 @@ Try it out! [Workout Tracker](https://ancient-ridge-45228.herokuapp.com/ "Workou
 * Graph client results using D3
 * Write algorithm to calculate macronutrients recommended for client.
 * Implement mem-caching
+* Allow clients to message their trainers.
+* Add trainer ids to associate clients to trainers and application can handle multiple trainers.
 
 ## Screenshots
 ###### User Login
