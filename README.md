@@ -3,9 +3,6 @@
 Web app developed for personal trainers to track clients’ fitness goals.
 Try it out! 
 * https://ancient-ridge-45228.herokuapp.com/
-* Trainer login: eddy@gmail.com password: password
-* Male Client login: john@gmail.com password: password
-* Female login: jane@gmail.com password: password
 
 ## Technologies Used
 
