@@ -1,27 +1,25 @@
 <div class="sfimg">
 <!-- change this div into a modal -->
+
 <div class="div-container">
   <img class="logo" src="http://previews.123rf.com/images/marrishuanna/marrishuanna1511/marrishuanna151100091/48473886-vector-emblem-logo-for-the-sports-center-hand-with-a-dumbbell-on-a-white-background-Stock-Vector.jpg" height="100px" width="100px">
+
   <form action="/" method="post">
-    
-    <%= render 'flash_message' %>
-    
-    <div class="form-input">
-      <input type="email" placeholder="Email" name="user[email]">
-    </div>
-    
-    <div class="form-input">
-      <input type="password" placeholder="Password" name="user[password]">
-    </div>
+    <input type="hidden" name="user[email]" value="eddy@gmail.com">
+    <input type="hidden" name="user[password]" value="password">
     <div class="">
-      <input type="submit" class="btn-login" value="Log in"</input>
+      <input type="submit" class="btn-login" value="Demo: Log in as Admin"</input>
     </div>
-    </form>
+  </form>
 
-    <a id="reg" href="/users/new">Register</a>
-  </div>
-
+  <form action="/" method="post">
+    <input type="hidden" name="user[email]" value="jane@gmail.com">
+    <input type="hidden" name="user[password]" value="password">
+    <div class="">
+      <input type="submit" class="btn-login" value="Demo: Log in as Client"</input>
+    </div>
+  </form>
 </div>
 
 
-
+</div>
