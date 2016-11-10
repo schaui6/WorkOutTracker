@@ -1,8 +1,7 @@
 # Workout Tracker
 
-Web app developed for personal trainers to track clients’ fitness goals.
-Try it out! [workout tracker link](https://ancient-ridge-45228.herokuapp.com/ "Workout Tracker")
-* https://ancient-ridge-45228.herokuapp.com/
+Web app developed for helping personal trainers take clients’ fitness goals to the next level.
+Try it out! [Workout Tracker](https://ancient-ridge-45228.herokuapp.com/ "Workout Tracker")
 
 ## Noteworthy features
 
