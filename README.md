@@ -4,6 +4,13 @@ Web app developed for personal trainers to track clients’ fitness goals.
 Try it out!
 * https://ancient-ridge-45228.herokuapp.com/
 
+## Noteworthy features
+
+* Basil Metabolic Rate(B.M.R) is calculated based on clients' age, weight, and height to suggest daily caloric needs  and self-adjust as a client's body changes.
+* Body Fat Percentage is calculated based in user measurements and self-adjusts as as a client's body changes.
+* Target Heart Rate Zones are self-calculated to suggest workout intensity based on workout goals as client needs changes.
+* Creating routine workouts is easy as pressing a button! Common workouts are preprogrammed and maybe adjusted based on the client's needs. 
+
 ## Technologies Used
 
 * Ruby/Ruby on Rails
