@@ -42,12 +42,7 @@
     <%= render 'client_workouts', :locals => {:phases => phases, workouts: @workouts } %>
 
     <!-- D3 graph for progress -->
-    <%= render 'graphs' %>
-
+    <div id="graphs-div">
+      <%= render 'graphs' %>
+    </div>
   <% end %>
-
-
-
-
-
-

@@ -15,10 +15,10 @@
 //= require turbolinks
 //= require_tree .
 $(document).ready(function() {
-
     $('#show-measurements').on('click', showMeasurements);
     $('#show-goals').on('click', showGoals);
     $('.wobtn').on('click', markComplete);
+    $('#show-progress').on('click', showProgress);
 });
 
 var showMeasurements = function(event){
@@ -31,6 +31,12 @@ var showGoals = function(event){
   event.preventDefault();
   console.log("Goal");
   $('#glist').toggle();
+};
+
+var showProgress = function(event){
+  event.preventDefault();
+  console.log("progress");
+  $('#graphs-div').toggle();
 };
 
 var markComplete = function(event){
