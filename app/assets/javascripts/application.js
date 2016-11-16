@@ -53,9 +53,9 @@ var markComplete = function(event){
     context: that
   }).success(function(data){
     console.log(data);
-    $(this).hide()
-    $(this).parent().css('class', 'list-group-item list-group-item-success')
+    $(this).hide();
+    $(this).parent().css('class', 'list-group-item list-group-item-success');
   }).fail(function(data){
-    console.log(data)
+    console.log(data);
   });
 };
