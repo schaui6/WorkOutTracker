@@ -14,6 +14,9 @@ gem 'autoprefixer-rails'
 gem 'rails_12factor', group: :production
 gem 'faker'
 gem 'paperclip'
+gem 'dotenv-rails'
+gem 'paperclip'
+gem 'aws-sdk', '~> 2.3'
 
 group :development, :test do
   gem 'byebug'
@@ -25,6 +28,3 @@ group :development do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
-
-
-
