@@ -32,6 +32,9 @@
   width: auto;
   /*position: relative;*/
 }
+#graphs-div {
+  display: none;
+}
 
 /*body {
     padding-top: 50px;
@@ -82,7 +85,7 @@ input[type="email"], input[type="password"] {
   width: 300px;
   font-size: 18px;
   border: none;
-  border-radius: 4px; 
+  border-radius: 4px;
   margin-bottom: 20px;
   background-color: #fff;
   padding-left: 40px;
@@ -107,7 +110,7 @@ form-input::before {
   color: #fff;
   border: none;
   background-color: #2ECC71;
-  border-radius: 4px;  
+  border-radius: 4px;
   /*border-bottom: 4px solid #27AE60;*/
   margin-bottom: 20px;
 }
