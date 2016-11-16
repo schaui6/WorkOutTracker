@@ -31,7 +31,6 @@
   margin-top: 0px;
   width: auto;
   /*position: relative;*/
-  margin-bottom: 5px;
 }
 #graphs-div {
   display: none;
@@ -75,10 +74,8 @@
 .avatar {
   width: 120px;
   height: 120px;
-  margin-top: -60px;
-  margin-bottom: 30px;
   border-radius: 60px;
-  margin: 0 auto;
+  margin: 5px auto 0px auto;
   text-align: center;
   /*position: absolute;*/
 }
@@ -120,4 +117,12 @@ form-input::before {
 
 #reg {
   color: #fff;
+}
+
+.complete-workout {
+  display: none;
+}
+
+.incomplete-workout {
+  
 }
