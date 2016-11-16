@@ -201,7 +201,7 @@ PLATFORMS
 
 DEPENDENCIES
   autoprefixer-rails
-  aws-sdk (~> 2.3)
+  aws-sdk (~> 2.0)
   bcrypt (~> 3.1.7)
   byebug
   dotenv-rails
