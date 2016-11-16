@@ -20,7 +20,8 @@
           <section class="<%= workout.completed ? 'complete-workout' : 'incomplete-workout' %> workout-info">
             <li class="list-group-item list-group-item-success">
               <strong><%= workout.name %></strong>
-              <input type="submit" value="Complete" class="btn-xs btn-success pull-right wobtn" name="<%= workout.user_id %>" id="<%= workout.id %>">
+<!--               <input type="checkbox" name="<%= workout.user_id %>-check" value="Complete-Check" class="pull-right" checked="<%= workout.completed %>"> -->
+              <label class='btn-xs btn-success wobtn pull-right'><input type="checkbox" value="Complete" class="complete-check" name="<%= workout.user_id %>" id="<%= workout.id %>" <%= workout.completed ? 'checked' : '' %> >Completed</label>
             </li>
             <li class="list-group-item">
               <span class="badge"><%= workout.reps %></span>Reps:

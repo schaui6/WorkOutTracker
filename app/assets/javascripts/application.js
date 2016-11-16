@@ -14,7 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-$(document).ready(function() {
+$(document).on('turbolinks:load', function() {
     $('#show-measurements').on('click', showMeasurements);
     $('#show-goals').on('click', showGoals);
     $('.wobtn').on('click', markComplete);
@@ -49,9 +49,9 @@ var showProgress = function(event){
 var markComplete = function(event){
   event.preventDefault();
   console.log(this);
-  var that = $(this);
-  var userId = $(this).attr('name');
-  var id = $(this).attr('id');
+  var that = $(this).find('.complete-check');
+  var userId = $(this).find('.complete-check').attr('name');
+  var id = $(this).find('.complete-check').attr('id');
   var url = '/users/' + userId + '/workouts/' + id
   console.log(url);
   $.ajax({
@@ -60,8 +60,13 @@ var markComplete = function(event){
     context: that
   }).success(function(data){
     console.log(data);
-    $(this).hide();
-    $(this).parent().css('class', 'list-group-item list-group-item-success');
+    if (data) {
+      this.prop('checked', true);
+    } else {
+      this.removeAttr('checked');
+    }
+    // $(this).hide();
+    // $(this).parent().css('class', 'list-group-item list-group-item-success');
   }).fail(function(data){
     console.log(data);
   });

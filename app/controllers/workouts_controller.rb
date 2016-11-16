@@ -53,8 +53,9 @@
     # if current_user.admin?
       if request.xhr?
         @workout = Workout.find_by(id: params[:id])
-        @workout.update(completed: true)
-        render :json=>true
+        @workout.completed ? @workout.update(completed: false) : @workout.update(completed: true)
+        result = @workout.completed
+        render :json=>result
       else
         @workout = Workout.find_by(id: params[:id])
         @user = User.find_by(id: params[:user_id])
