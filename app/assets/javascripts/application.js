@@ -24,19 +24,25 @@ $(document).ready(function() {
 var showMeasurements = function(event){
   event.preventDefault();
   console.log("Meas");
-  $('#mlist').toggle();
+  $('#graphs-div').hide();
+  $('#mlist').show();  
+  $('#glist').hide();
 };
 
 var showGoals = function(event){
   event.preventDefault();
   console.log("Goal");
-  $('#glist').toggle();
+  $('#graphs-div').hide();
+  $('#mlist').hide();  
+  $('#glist').show();
 };
 
 var showProgress = function(event){
   event.preventDefault();
   console.log("progress");
-  $('#graphs-div').toggle();
+  $('#graphs-div').show();
+  $('#mlist').hide();  
+  $('#glist').hide();
 };
 
 var markComplete = function(event){
