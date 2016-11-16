@@ -19,6 +19,7 @@ $(document).ready(function() {
     $('#show-goals').on('click', showGoals);
     $('.wobtn').on('click', markComplete);
     $('#show-progress').on('click', showProgress);
+    $('.day-link').on('click', showDay)
 });
 
 var showMeasurements = function(event){
@@ -65,3 +66,9 @@ var markComplete = function(event){
     console.log(data);
   });
 };
+
+var showDay = function(event){
+  event.preventDefault();
+  var dayContainer = $(this).parent();
+  dayContainer.find(".workout-info").toggle();
+}

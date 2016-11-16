@@ -118,3 +118,11 @@ form-input::before {
 #reg {
   color: #fff;
 }
+
+.complete-workout {
+  display: none;
+}
+
+.incomplete-workout {
+  
+}

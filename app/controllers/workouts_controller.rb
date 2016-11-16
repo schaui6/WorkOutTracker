@@ -1,4 +1,4 @@
-class WorkoutsController < ApplicationController
+ class WorkoutsController < ApplicationController
 
   def index
     # @current_user =
