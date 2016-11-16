@@ -17,6 +17,7 @@ gem 'paperclip'
 gem 'dotenv-rails'
 gem 'paperclip'
 gem 'aws-sdk', '~> 2.0'
+gem 'coffee-rails'
 
 group :development, :test do
   gem 'byebug'
