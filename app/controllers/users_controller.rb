@@ -101,6 +101,7 @@ class UsersController < ApplicationController
         redirect_to user_path
       end
     else
+      p @users.errors.full_messages
       redirect_to edit_user_path(@user)
     end
   end

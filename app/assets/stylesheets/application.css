@@ -133,8 +133,9 @@ form-input::before {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   margin-bottom: 20px;
-  min-width: 30%;
-  flex-basis: content;
+  margin-right: 10px;
+  flex-basis: 350px;
+  flex-shrink: 1;
 }
 
 .phase-card:hover {
