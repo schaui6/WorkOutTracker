@@ -15,6 +15,10 @@
 
     <strong><%= current_user.first_name %></strong>
     </div>
+<!-- Flash message when successfully creating/updating/destroying a workout or prevent client to view other users show page -->
+    
+    <%= render 'flash_message' %>
+
 
     <div align="center">Congratulations <strong><%= @user.first_name.capitalize %></strong> For Making It This Far!<br>
     Here is Your Progress:

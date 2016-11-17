@@ -179,6 +179,16 @@ form-input::before {
   outline: 0;
 }
 
+.flash-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.flash-message {
+  text-align: center;
+  display: inline-block;
+}
+
 
 
 
