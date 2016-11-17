@@ -62,7 +62,6 @@ var markComplete = function(event){
     console.log(data);
     if (data) {
       this.prop('checked', true);
-      this.parents('.workout-info').hide();
     } else {
       this.removeAttr('checked');
     }
