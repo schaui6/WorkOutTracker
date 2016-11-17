@@ -184,11 +184,14 @@ form-input::before {
   display: flex;
   justify-content: center;
 }
+
 .flash-message {
   text-align: center;
   display: inline-block;
 }
 
-
-
+#user-dropdown {
+  left: auto;
+  right: 0;
+}
 
