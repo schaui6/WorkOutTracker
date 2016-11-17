@@ -1,40 +1,44 @@
 <div id="glist">
   <% @phases.each do |phase_num| %>
-    <a href="#"><h3>Phase  <%= phase_num %></h3></a>
-    <!-- assigns phase number to each workout -->
-    <% phase_workout = @workouts.select { |workout| workout.phase == phase_num} %>
+  <!-- <div class='phase-container'> -->
+    <div class="phase-card">
+      <a href="#"><h3>Phase  <%= phase_num %></h3></a>
+      <!-- assigns phase number to each workout -->
+      <% phase_workout = @workouts.select { |workout| workout.phase == phase_num} %>
 
-    <!-- adds the day of the workout day days array -->
-    <% days = [] %>
-    <% phase_workout.each { |workout| days.push(workout.day) } %>
+      <!-- adds the day of the workout day days array -->
+      <% days = [] %>
+      <% phase_workout.each { |workout| days.push(workout.day) } %>
 
-    <!-- iterate through each day in the days array -->
-    <% days = days.uniq %>
-    <% days.sort! %>
-    <% days.each do |day| %>
-      <section class="day-container">
-        <a href="#" class="day-link">Day <%= day %></a>
-        <% day_workout = phase_workout.select {|workout| workout.day == day} %>
-        <% day_workout.each do |workout| %>
-          <!-- only display the workout if it has not been completed -->
-          <section class="<%= workout.completed ? 'complete-workout' : 'incomplete-workout' %> workout-info">
-            <li class="list-group-item list-group-item-success">
-              <strong><%= workout.name %></strong>
-<!--               <input type="checkbox" name="<%= workout.user_id %>-check" value="Complete-Check" class="pull-right" checked="<%= workout.completed %>"> -->
-              <label class='btn-xs btn-success wobtn pull-right'><input type="checkbox" value="Complete" class="complete-check" name="<%= workout.user_id %>" id="<%= workout.id %>" <%= workout.completed ? 'checked' : '' %> >Completed</label>
-            </li>
-            <li class="list-group-item">
-              <span class="badge"><%= workout.reps %></span>Reps:
-            </li>
-            <li class="list-group-item">
-              <span class="badge"><%= workout.sets %></span>Sets:
-            </li>
-            <li class="list-group-item">
-              <span class="badge"><%= workout.weight %></span>Weight:
-            </li>
+      <!-- iterate through each day in the days array -->
+      <% days = days.uniq %>
+      <% days.sort! %>
+      <% days.each do |day| %>
+        <section class="day-container">
+          <a href="#" class="day-link">Day <%= day %></a>
+          <% day_workout = phase_workout.select {|workout| workout.day == day} %>
+          <% day_workout.each do |workout| %>
+            <!-- only display the workout if it has not been completed -->
+            <section class="<%= workout.completed ? 'complete-workout' : 'incomplete-workout' %> workout-info">
+              <li class="list-group-item list-group-item-success">
+                <strong><%= workout.name %></strong>
+  <!--               <input type="checkbox" name="<%= workout.user_id %>-check" value="Complete-Check" class="pull-right" checked="<%= workout.completed %>"> -->
+                <label class='btn-xs btn-success wobtn pull-right'>Completed <input type="checkbox" value="Complete" class="complete-check" name="<%= workout.user_id %>" id="<%= workout.id %>" <%= workout.completed ? 'checked' : '' %> ></label>
+              </li>
+              <li class="list-group-item">
+                <span class="badge"><%= workout.reps %></span>Reps:
+              </li>
+              <li class="list-group-item">
+                <span class="badge"><%= workout.sets %></span>Sets:
+              </li>
+              <li class="list-group-item">
+                <span class="badge"><%= workout.weight %></span>Weight:
+              </li>
+            </section>
           </section>
-        </section>
+        <% end %>
       <% end %>
-    <% end %>
+    </div>
+    <!-- </div> -->
   <% end %>
 </div>
