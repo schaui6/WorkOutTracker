@@ -195,3 +195,37 @@ form-input::before {
   right: 0;
 }
 
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.form-text-inputs {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.form-static-details {
+
+}
+
+.form-measurements {
+
+}
+
+.edit_user {
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+.form-buttons {
+  align-self: center;
+}
+
+.edit-profile-header {
+  align-self: center;
+}
