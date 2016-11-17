@@ -1,7 +1,9 @@
 <!-- Flash message when successfully updating/destroying a user -->
-<% if flash[:success] %>
-  <div class="alert alert-success"><%= flash[:success] %></div>
-<% elsif flash[:error] %>
-  <div class="alert alert-danger"><%= flash[:error] %></div>
-<% end %>
+<div class="flash-container">
+  <% if flash[:success] %>
+    <div class="alert alert-success flash-message"><%= flash[:success] %></div>
+  <% elsif flash[:error] %>
+    <div class="alert alert-danger flash-message"><%= flash[:error] %></div>
+  <% end %>
+</div>
 <!-- End of flash message -->

@@ -19,7 +19,7 @@ $(document).on('turbolinks:load', function() {
     $('#show-goals').on('click', showGoals);
     $('.wobtn').on('click', markComplete);
     $('#show-progress').on('click', showProgress);
-    $('.day-link').on('click', showDay)
+    $('.day-button').on('click', showDay)
 });
 
 var showMeasurements = function(event){
