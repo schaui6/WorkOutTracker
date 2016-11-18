@@ -24,6 +24,7 @@
           </button>
           <ul class="dropdown-menu">
             <li><a href="users/<%= @trainer.id %>/edit">Edit Profile</a></li>
+            <li><a href="/users/new">Add A User</a></li>
             <li><%= link_to "Log Out", {:controller=> "sessions", :action=> "destroy"}, method: :delete %></li>
           </ul>
         </div>
