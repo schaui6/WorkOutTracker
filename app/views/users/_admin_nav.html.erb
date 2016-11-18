@@ -2,8 +2,8 @@
     </div>
 
      <div class="profile-container">
-
-    <img class="avatar" src="http://fitnesssf.com/wp-content/uploads/2014/09/fsf_web.trainers_soma_eddyAguirre111714.jpg" height="500px" width="500px">
+      <%= image_tag @trainer.avatar.url(:thumb), class: "avatar" %>
+    <!-- <img class="avatar" src="http://schaui6.github.io/eddy.jpg" height="500px" width="500px"> -->
 
     <br>
 
@@ -24,6 +24,7 @@
             <span class="glyphicon glyphicon-user"></span>  <%= current_user.first_name %> <span class="caret"></span>
           </button>
           <ul class="dropdown-menu">
+            <li><a href="users/<%= @trainer.id %>/edit">Edit Profile</a></li>
             <li><%= link_to "Log Out", {:controller=> "sessions", :action=> "destroy"}, method: :delete %></li>
           </ul>
         </div>

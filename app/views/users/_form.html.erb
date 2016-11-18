@@ -6,6 +6,7 @@
 <div class="profile-container"></div> 
 
 <div class='form-container'>
+<%= image_tag @user.avatar.url(:thumb), class: "avatar" %>
 <h1 class='edit-profile-header'>Edit Profile</h1>
   <%= form_for @user, html: { multipart: true } do |f| %>
     <div class='form-text-inputs'>

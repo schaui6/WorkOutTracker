@@ -4,6 +4,7 @@ class UsersController < ApplicationController
   before_action :require_admin, only: [:index, :destroy]
 
   def index
+    @trainer = User.find_by(id: 1)
     @users = User.where(admin: false)
   end
 
