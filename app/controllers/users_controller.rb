@@ -9,6 +9,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @trainer = User.find_by(id: 1)
     @user = User.find_by(id: params[:id])
     @phases = phases(@user) if @user
     @phases.sort!
